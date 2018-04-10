@@ -1,0 +1,956 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Pedidos",
+		"_postman_id": "7fbbac6d-38ef-4f27-c372-9937802fe166",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Autorizacion",
+			"description": "",
+			"item": [
+				{
+					"name": "getRequestAuth",
+					"request": {
+						"url": "http://localhost/pedidos/api/getRequestAuth",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "usuario",
+									"value": "agomez",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "usuarios",
+			"description": "",
+			"item": [
+				{
+					"name": "getUsuarios",
+					"request": {
+						"url": "http://localhost/pedidos/api/getUsuarios/12/0",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjI5MDgzMjUsImF1ZCI6ImQyM2JiODhiNTFiMWZmZDhjNTM2YjBjOTdiNWQyZThmZTQxYjU4NGQiLCJkYXRhIjp7ImlkdXMiOiIxIiwibm9tYnJlIjoiQWxlamFuZHJvIiwiZXN0YXR1cyI6IjEifX0.2jiJqdi6-eIhymrBM2DtxMRHXTOAw9KcjchLv-l1FfU",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": "Listar los Usuarios"
+					},
+					"response": []
+				},
+				{
+					"name": "getUsuario",
+					"request": {
+						"url": "http://localhost/pedidos/api/getUsuario",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjI5MDgzMjUsImF1ZCI6ImQyM2JiODhiNTFiMWZmZDhjNTM2YjBjOTdiNWQyZThmZTQxYjU4NGQiLCJkYXRhIjp7ImlkdXMiOiIxIiwibm9tYnJlIjoiQWxlamFuZHJvIiwiZXN0YXR1cyI6IjEifX0.2jiJqdi6-eIhymrBM2DtxMRHXTOAw9KcjchLv-l1FfU",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": "Extraer la informacion del usuario solicitado"
+					},
+					"response": []
+				},
+				{
+					"name": "getRegistrarUsuario",
+					"request": {
+						"url": "http://localhost/pedidos/api/getRegistrarUsuario",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjI5MTU2NzIsImF1ZCI6ImQyM2JiODhiNTFiMWZmZDhjNTM2YjBjOTdiNWQyZThmZTQxYjU4NGQiLCJkYXRhIjp7ImlkdXN1YXJpbyI6IjEiLCJub21icmUiOiJBbGVqYW5kcm8iLCJpZGVzdGF0dXMiOiIxIn19.WYcOLZeETSffi4pXPcdlU6YapH8_1RN21c7wdv0EZIY",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idsucursal",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "idempresa",
+									"value": "2",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "nombre",
+									"value": "Pedro Gomez",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "usuario",
+									"value": "pgomez",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "idperfil",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getActualizarUsuario",
+					"request": {
+						"url": "http://localhost/pedidos/api/getActualizarUsuario",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjI5MDc5MDcsImF1ZCI6ImQyM2JiODhiNTFiMWZmZDhjNTM2YjBjOTdiNWQyZThmZTQxYjU4NGQiLCJkYXRhIjp7ImlkdXMiOiIxIiwibm9tYnJlIjoiQWxlamFuZHJvIiwiZXN0YXR1cyI6IjEifX0.pVWO5agi8irfGq9syCp_mluOjby1Wda4f1Qv3Qzb7Zc",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idusuario",
+									"value": "2",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "idempresa",
+									"value": "2",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "idsucursal",
+									"value": "2",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "nombre",
+									"value": "Pedro Gomez",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "idperfil",
+									"value": "2",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getDesactivarUsuario",
+					"request": {
+						"url": "http://localhost/pedidos/api/getDesactivarUsuario/2",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjI5MTk2MjcsImF1ZCI6ImQyM2JiODhiNTFiMWZmZDhjNTM2YjBjOTdiNWQyZThmZTQxYjU4NGQiLCJkYXRhIjp7ImlkdXN1YXJpbyI6IjEiLCJub21icmUiOiJBbGVqYW5kcm8iLCJpZGVzdGF0dXMiOiIxIn19.aOeyK0oAnOEP3Rf86_-NPncZdnSB2EPg55Uq32RXlvQ",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "sucursales",
+			"description": "",
+			"item": [
+				{
+					"name": "getSucursales",
+					"request": {
+						"url": "http://localhost/pedidos/api/getSucursales/12/0",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjI5MTk2MjcsImF1ZCI6ImQyM2JiODhiNTFiMWZmZDhjNTM2YjBjOTdiNWQyZThmZTQxYjU4NGQiLCJkYXRhIjp7ImlkdXN1YXJpbyI6IjEiLCJub21icmUiOiJBbGVqYW5kcm8iLCJpZGVzdGF0dXMiOiIxIn19.aOeyK0oAnOEP3Rf86_-NPncZdnSB2EPg55Uq32RXlvQ",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": "Listar Sucursales\n\nParametros\n\n{limit} = Limite de registros\n{pagina} = No Pagina solicitada"
+					},
+					"response": []
+				},
+				{
+					"name": "getSucursal",
+					"request": {
+						"url": "http://localhost/pedidos/api/getSucursal/1",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjI5MTk2MjcsImF1ZCI6ImQyM2JiODhiNTFiMWZmZDhjNTM2YjBjOTdiNWQyZThmZTQxYjU4NGQiLCJkYXRhIjp7ImlkdXN1YXJpbyI6IjEiLCJub21icmUiOiJBbGVqYW5kcm8iLCJpZGVzdGF0dXMiOiIxIn19.aOeyK0oAnOEP3Rf86_-NPncZdnSB2EPg55Uq32RXlvQ",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": "Extraer la informacion de la sucursal solicitada\n\n{id} = id de la sucursal"
+					},
+					"response": []
+				},
+				{
+					"name": "getRegistrarSucursal",
+					"request": {
+						"url": "http://localhost/pedidos/api/getRegistrarSucursal",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjI5MTk2MjcsImF1ZCI6ImQyM2JiODhiNTFiMWZmZDhjNTM2YjBjOTdiNWQyZThmZTQxYjU4NGQiLCJkYXRhIjp7ImlkdXN1YXJpbyI6IjEiLCJub21icmUiOiJBbGVqYW5kcm8iLCJpZGVzdGF0dXMiOiIxIn19.aOeyK0oAnOEP3Rf86_-NPncZdnSB2EPg55Uq32RXlvQ",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nombre",
+									"value": "Sucursal Colon",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "idempresa",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": "Request para crear una nueva sucursal"
+					},
+					"response": []
+				},
+				{
+					"name": "getActualizarSucursal",
+					"request": {
+						"url": "http://localhost/pedidos/api/getActualizarSucursal",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjI5MTk2MjcsImF1ZCI6ImQyM2JiODhiNTFiMWZmZDhjNTM2YjBjOTdiNWQyZThmZTQxYjU4NGQiLCJkYXRhIjp7ImlkdXN1YXJpbyI6IjEiLCJub21icmUiOiJBbGVqYW5kcm8iLCJpZGVzdGF0dXMiOiIxIn19.aOeyK0oAnOEP3Rf86_-NPncZdnSB2EPg55Uq32RXlvQ",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nombre",
+									"value": "Sucursal Colon",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "idempresa",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": "Request para actualizar la sucursal"
+					},
+					"response": []
+				},
+				{
+					"name": "getDesactivarSucursal",
+					"request": {
+						"url": "http://localhost/pedidos/api/getDesactivarSucursal/2",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjI5MTk2MjcsImF1ZCI6ImQyM2JiODhiNTFiMWZmZDhjNTM2YjBjOTdiNWQyZThmZTQxYjU4NGQiLCJkYXRhIjp7ImlkdXN1YXJpbyI6IjEiLCJub21icmUiOiJBbGVqYW5kcm8iLCJpZGVzdGF0dXMiOiIxIn19.aOeyK0oAnOEP3Rf86_-NPncZdnSB2EPg55Uq32RXlvQ",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": "Request para desactivar la sucursal"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "clientes",
+			"description": "",
+			"item": [
+				{
+					"name": "getClientes",
+					"request": {
+						"url": "http://localhost/pedidos/api/getClientes/12/0",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjI5MzE4MzgsImF1ZCI6Ijc1Y2I4NzJmNDkxZmU4NzNiNTYyMTJjZmM1Y2JhNTg3YWY4YWY5ZjAiLCJkYXRhIjp7ImlkdXN1YXJpbyI6IjEiLCJub21icmUiOiJBbGVqYW5kcm8iLCJpZGVzdGF0dXMiOiIxIn19.wo0FyWfqc7UqgBnXPvCE7R-CkFDXuwAtmOe3M17Cvow",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": "Request para listar los clientes\n\n{limit} = limite de registros\n{pagina} = Numero de paginas"
+					},
+					"response": []
+				},
+				{
+					"name": "getCliente",
+					"request": {
+						"url": "http://localhost/pedidos/api/getCliente/1",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjI5MzE4MzgsImF1ZCI6Ijc1Y2I4NzJmNDkxZmU4NzNiNTYyMTJjZmM1Y2JhNTg3YWY4YWY5ZjAiLCJkYXRhIjp7ImlkdXN1YXJpbyI6IjEiLCJub21icmUiOiJBbGVqYW5kcm8iLCJpZGVzdGF0dXMiOiIxIn19.wo0FyWfqc7UqgBnXPvCE7R-CkFDXuwAtmOe3M17Cvow",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": "Request para listar el cliente\n\n{id} = registro solicitado"
+					},
+					"response": []
+				},
+				{
+					"name": "getRegistrarCliente",
+					"request": {
+						"url": "http://localhost/pedidos/api/getRegistrarCliente",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjI5MzE4MzgsImF1ZCI6Ijc1Y2I4NzJmNDkxZmU4NzNiNTYyMTJjZmM1Y2JhNTg3YWY4YWY5ZjAiLCJkYXRhIjp7ImlkdXN1YXJpbyI6IjEiLCJub21icmUiOiJBbGVqYW5kcm8iLCJpZGVzdGF0dXMiOiIxIn19.wo0FyWfqc7UqgBnXPvCE7R-CkFDXuwAtmOe3M17Cvow",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idempresa",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "nombre",
+									"value": "Juan Hernandez",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "telefono",
+									"value": "0",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "celular",
+									"value": "",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "direccion",
+									"value": "",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "entre_calles",
+									"value": "",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": "Request para registrar el cliente\n"
+					},
+					"response": []
+				},
+				{
+					"name": "getDesactivarCliente",
+					"request": {
+						"url": "http://localhost/pedidos/api/getDesactivarCliente/6",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjI5MzE4MzgsImF1ZCI6Ijc1Y2I4NzJmNDkxZmU4NzNiNTYyMTJjZmM1Y2JhNTg3YWY4YWY5ZjAiLCJkYXRhIjp7ImlkdXN1YXJpbyI6IjEiLCJub21icmUiOiJBbGVqYW5kcm8iLCJpZGVzdGF0dXMiOiIxIn19.wo0FyWfqc7UqgBnXPvCE7R-CkFDXuwAtmOe3M17Cvow",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": "Request para desactivar el cliente\n{id} = id del cliente"
+					},
+					"response": []
+				},
+				{
+					"name": "getActualizarCliente",
+					"request": {
+						"url": "http://localhost/pedidos/api/getActualizarCliente",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjI5MzE4MzgsImF1ZCI6Ijc1Y2I4NzJmNDkxZmU4NzNiNTYyMTJjZmM1Y2JhNTg3YWY4YWY5ZjAiLCJkYXRhIjp7ImlkdXN1YXJpbyI6IjEiLCJub21icmUiOiJBbGVqYW5kcm8iLCJpZGVzdGF0dXMiOiIxIn19.wo0FyWfqc7UqgBnXPvCE7R-CkFDXuwAtmOe3M17Cvow",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idcliente",
+									"value": "6",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "idempresa",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "nombre",
+									"value": "Juan Hernandez",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "telefono",
+									"value": "",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "celular",
+									"value": "",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "direccion",
+									"value": "",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "entre_calles",
+									"value": "",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "idestatus",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": "Request para actualizar el cliente\n{id} = id del cliente"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "empresas",
+			"description": "",
+			"item": [
+				{
+					"name": "getEmpresas",
+					"request": {
+						"url": "http://localhost/pedidos/api/getEmpresas/12/0",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjI5MzE4MzgsImF1ZCI6Ijc1Y2I4NzJmNDkxZmU4NzNiNTYyMTJjZmM1Y2JhNTg3YWY4YWY5ZjAiLCJkYXRhIjp7ImlkdXN1YXJpbyI6IjEiLCJub21icmUiOiJBbGVqYW5kcm8iLCJpZGVzdGF0dXMiOiIxIn19.wo0FyWfqc7UqgBnXPvCE7R-CkFDXuwAtmOe3M17Cvow",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": "Reques para listar las empresas\n\n{limit} = Limitar registros\n{pagina} = Numero de pagina"
+					},
+					"response": []
+				},
+				{
+					"name": "getEmpresa",
+					"request": {
+						"url": "http://localhost/pedidos/api/getEmpresa/1",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjI5MzE4MzgsImF1ZCI6Ijc1Y2I4NzJmNDkxZmU4NzNiNTYyMTJjZmM1Y2JhNTg3YWY4YWY5ZjAiLCJkYXRhIjp7ImlkdXN1YXJpbyI6IjEiLCJub21icmUiOiJBbGVqYW5kcm8iLCJpZGVzdGF0dXMiOiIxIn19.wo0FyWfqc7UqgBnXPvCE7R-CkFDXuwAtmOe3M17Cvow",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": "Reques para extraer la informacion de  la empresa\n\n{id} = id de empresa"
+					},
+					"response": []
+				},
+				{
+					"name": "getRegistrarEmpresa",
+					"request": {
+						"url": "http://localhost/pedidos/api/getRegistrarEmpresa",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjI5MzE4MzgsImF1ZCI6Ijc1Y2I4NzJmNDkxZmU4NzNiNTYyMTJjZmM1Y2JhNTg3YWY4YWY5ZjAiLCJkYXRhIjp7ImlkdXN1YXJpbyI6IjEiLCJub21icmUiOiJBbGVqYW5kcm8iLCJpZGVzdGF0dXMiOiIxIn19.wo0FyWfqc7UqgBnXPvCE7R-CkFDXuwAtmOe3M17Cvow",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nombre",
+									"value": "La fonda",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": "Reques para registrar  la empresa\n"
+					},
+					"response": []
+				},
+				{
+					"name": "getActualizarEmpresa",
+					"request": {
+						"url": "http://localhost/pedidos/api/getActualizarEmpresa",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjI5MzE4MzgsImF1ZCI6Ijc1Y2I4NzJmNDkxZmU4NzNiNTYyMTJjZmM1Y2JhNTg3YWY4YWY5ZjAiLCJkYXRhIjp7ImlkdXN1YXJpbyI6IjEiLCJub21icmUiOiJBbGVqYW5kcm8iLCJpZGVzdGF0dXMiOiIxIn19.wo0FyWfqc7UqgBnXPvCE7R-CkFDXuwAtmOe3M17Cvow",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nombre",
+									"value": "Mi Fonda",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "idempresa",
+									"value": "2",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": "Reques para actualizar  la empresa\n"
+					},
+					"response": []
+				},
+				{
+					"name": "getDesactivarEmpresa",
+					"request": {
+						"url": "http://localhost/pedidos/api/getDesactivarEmpresa/1",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjI5MzE4MzgsImF1ZCI6Ijc1Y2I4NzJmNDkxZmU4NzNiNTYyMTJjZmM1Y2JhNTg3YWY4YWY5ZjAiLCJkYXRhIjp7ImlkdXN1YXJpbyI6IjEiLCJub21icmUiOiJBbGVqYW5kcm8iLCJpZGVzdGF0dXMiOiIxIn19.wo0FyWfqc7UqgBnXPvCE7R-CkFDXuwAtmOe3M17Cvow",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "mesas",
+			"description": "",
+			"item": [
+				{
+					"name": "getMesas",
+					"request": {
+						"url": "http://localhost/pedidos/api/getMesas/12/0",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjI5MzE4MzgsImF1ZCI6Ijc1Y2I4NzJmNDkxZmU4NzNiNTYyMTJjZmM1Y2JhNTg3YWY4YWY5ZjAiLCJkYXRhIjp7ImlkdXN1YXJpbyI6IjEiLCJub21icmUiOiJBbGVqYW5kcm8iLCJpZGVzdGF0dXMiOiIxIn19.wo0FyWfqc7UqgBnXPvCE7R-CkFDXuwAtmOe3M17Cvow",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": "Request para listar las mesas"
+					},
+					"response": []
+				},
+				{
+					"name": "getMesa",
+					"request": {
+						"url": "http://localhost/pedidos/api/getMesa/1",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjI5MzE4MzgsImF1ZCI6Ijc1Y2I4NzJmNDkxZmU4NzNiNTYyMTJjZmM1Y2JhNTg3YWY4YWY5ZjAiLCJkYXRhIjp7ImlkdXN1YXJpbyI6IjEiLCJub21icmUiOiJBbGVqYW5kcm8iLCJpZGVzdGF0dXMiOiIxIn19.wo0FyWfqc7UqgBnXPvCE7R-CkFDXuwAtmOe3M17Cvow",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": "Request para extraer la informacion de la mesa"
+					},
+					"response": []
+				},
+				{
+					"name": "getRegistrarMesa",
+					"request": {
+						"url": "http://localhost/pedidos/api/getRegistrarMesa",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjI5MzE4MzgsImF1ZCI6Ijc1Y2I4NzJmNDkxZmU4NzNiNTYyMTJjZmM1Y2JhNTg3YWY4YWY5ZjAiLCJkYXRhIjp7ImlkdXN1YXJpbyI6IjEiLCJub21icmUiOiJBbGVqYW5kcm8iLCJpZGVzdGF0dXMiOiIxIn19.wo0FyWfqc7UqgBnXPvCE7R-CkFDXuwAtmOe3M17Cvow",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nombre",
+									"value": "Mesa 2",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "tipo",
+									"value": "F",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "idempresa",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "numero_mesa",
+									"value": "3",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": "Request para registrar una mesa"
+					},
+					"response": []
+				},
+				{
+					"name": "getActualizarMesa",
+					"request": {
+						"url": "http://localhost/pedidos/api/getActualizarMesa",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjI5MzE4MzgsImF1ZCI6Ijc1Y2I4NzJmNDkxZmU4NzNiNTYyMTJjZmM1Y2JhNTg3YWY4YWY5ZjAiLCJkYXRhIjp7ImlkdXN1YXJpbyI6IjEiLCJub21icmUiOiJBbGVqYW5kcm8iLCJpZGVzdGF0dXMiOiIxIn19.wo0FyWfqc7UqgBnXPvCE7R-CkFDXuwAtmOe3M17Cvow",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nombre",
+									"value": "Mesa 1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "tipo",
+									"value": "F",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "idempresa",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "numero_mesa",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "idmesa",
+									"value": "2",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "idestatus",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": "Request para actualizar una mesa"
+					},
+					"response": []
+				},
+				{
+					"name": "getDesactivarMesa",
+					"request": {
+						"url": "http://localhost/pedidos/api/getDesactivarMesa/3",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjI5MzE4MzgsImF1ZCI6Ijc1Y2I4NzJmNDkxZmU4NzNiNTYyMTJjZmM1Y2JhNTg3YWY4YWY5ZjAiLCJkYXRhIjp7ImlkdXN1YXJpbyI6IjEiLCJub21icmUiOiJBbGVqYW5kcm8iLCJpZGVzdGF0dXMiOiIxIn19.wo0FyWfqc7UqgBnXPvCE7R-CkFDXuwAtmOe3M17Cvow",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": "Request para desactivar una mesa"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "platillos",
+			"description": "",
+			"item": [
+				{
+					"name": "getPlatillos",
+					"request": {
+						"url": "http://localhost/pedidos/api/getPlatillos/12/0",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjI5MzE4MzgsImF1ZCI6Ijc1Y2I4NzJmNDkxZmU4NzNiNTYyMTJjZmM1Y2JhNTg3YWY4YWY5ZjAiLCJkYXRhIjp7ImlkdXN1YXJpbyI6IjEiLCJub21icmUiOiJBbGVqYW5kcm8iLCJpZGVzdGF0dXMiOiIxIn19.wo0FyWfqc7UqgBnXPvCE7R-CkFDXuwAtmOe3M17Cvow",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": "Lista de Platillos"
+					},
+					"response": []
+				},
+				{
+					"name": "getPlatillo",
+					"request": {
+						"url": "http://localhost/pedidos/api/getPlatillo/2",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjI5MzE4MzgsImF1ZCI6Ijc1Y2I4NzJmNDkxZmU4NzNiNTYyMTJjZmM1Y2JhNTg3YWY4YWY5ZjAiLCJkYXRhIjp7ImlkdXN1YXJpbyI6IjEiLCJub21icmUiOiJBbGVqYW5kcm8iLCJpZGVzdGF0dXMiOiIxIn19.wo0FyWfqc7UqgBnXPvCE7R-CkFDXuwAtmOe3M17Cvow",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": "Listar el Platillo solicitado"
+					},
+					"response": []
+				},
+				{
+					"name": "getRegistrarPlatillo",
+					"request": {
+						"url": "http://localhost/pedidos/api/getRegistrarPlatillo",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjI5MzE4MzgsImF1ZCI6Ijc1Y2I4NzJmNDkxZmU4NzNiNTYyMTJjZmM1Y2JhNTg3YWY4YWY5ZjAiLCJkYXRhIjp7ImlkdXN1YXJpbyI6IjEiLCJub21icmUiOiJBbGVqYW5kcm8iLCJpZGVzdGF0dXMiOiIxIn19.wo0FyWfqc7UqgBnXPvCE7R-CkFDXuwAtmOe3M17Cvow",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "idempresa",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "nombre",
+									"value": "",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": "Registrar el Platillo"
+					},
+					"response": []
+				},
+				{
+					"name": "getRegistrarPlatillo",
+					"request": {
+						"url": "http://localhost/pedidos/api/getRegistrarPlatillo",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjMwMTQyNjksImF1ZCI6Ijc1Y2I4NzJmNDkxZmU4NzNiNTYyMTJjZmM1Y2JhNTg3YWY4YWY5ZjAiLCJkYXRhIjp7ImlkdXN1YXJpbyI6IjEiLCJub21icmUiOiJBbGVqYW5kcm8iLCJpZGVzdGF0dXMiOiIxIn19.vBPgwPC_xgxogDkWFqWEBVTHVLt61X4BnzJSni7Pzlc",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "idempresa",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "nombre",
+									"value": "Tacos de Pastor",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "tipo",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "categoria",
+									"value": "2",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "subcategoria",
+									"value": "2",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "precio_venta",
+									"value": "60",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": "Registrar el Platillo"
+					},
+					"response": []
+				},
+				{
+					"name": "getActualizarPlatillo",
+					"request": {
+						"url": "http://localhost/pedidos/api/getDesactivarPlatillo/4",
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjMwMTQyNjksImF1ZCI6Ijc1Y2I4NzJmNDkxZmU4NzNiNTYyMTJjZmM1Y2JhNTg3YWY4YWY5ZjAiLCJkYXRhIjp7ImlkdXN1YXJpbyI6IjEiLCJub21icmUiOiJBbGVqYW5kcm8iLCJpZGVzdGF0dXMiOiIxIn19.vBPgwPC_xgxogDkWFqWEBVTHVLt61X4BnzJSni7Pzlc",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": "Actualizar el Platillo"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
