@@ -6,7 +6,7 @@
  * Time: 11:03 PM
  */
 
-$base = __DIR__ . '/../app/';
+$base = __DIR__ . '/../core_api/';
 
 $folders = [
     'lib',
