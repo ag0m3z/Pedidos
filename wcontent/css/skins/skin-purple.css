@@ -1,0 +1,90 @@
+/**
+  SKIN Balck
+ */
+.skin-black .main-header .navbar {
+  background-color: #222222;
+}
+.skin-black .main-header .navbar .nav > li > a {
+  color: #ffffff;
+}
+.skin-black .main-header .navbar .nav > li > a:hover,
+.skin-black .main-header .navbar .nav > li > a:active,
+.skin-black .main-header .navbar .nav > li > a:focus,
+.skin-black .main-header .navbar .nav .open > a,
+.skin-black .main-header .navbar .nav .open > a:hover,
+.skin-black .main-header .navbar .nav .open > a:focus,
+.skin-black .main-header .navbar .nav > .active > a {
+  background-color:transparent;
+  color: #f6f6f6;
+}
+.skin-black .main-header .navbar .sidebar-toggle {
+  color: #ffffff;
+}
+.skin-black .main-header .navbar .sidebar-toggle:hover {
+  color: #f6f6f6;
+  background: rgba(0, 0, 0, 0.1);
+}
+.skin-black .main-header .navbar .sidebar-toggle {
+  color: #fff;
+}
+.skin-black .main-header .navbar .sidebar-toggle:hover {
+  background-color: #222222;
+}
+@media (max-width: 767px) {
+  .skin-black .main-header .navbar .dropdown-menu li.divider {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .skin-black .main-header .navbar .dropdown-menu li a {
+    color: #fff;
+  }
+  .skin-black .main-header .navbar .dropdown-menu li a:hover {
+    background: #222222;
+  }
+  .skin-black .main-header .logo {
+    background-color: #212121 !important;
+    color: #ffffff;
+    border-bottom: 0 solid transparent;
+  }
+}
+.skin-black .main-header .logo {
+  background-color:transparent;
+  color: #ffffff;
+  border-bottom: 0 solid transparent;
+}
+.skin-black .main-sidebar{
+  background-color: rgba(0, 0, 0, 0.478) !important;
+}
+
+
+.skin-black .user-panel > .info,
+.skin-black .user-panel > .info > a {
+  color: #fff;
+}
+.skin-black .main-header .navbar .sidebar-toggle {
+  color: #ffffff;
+}
+.skin-black .main-header .navbar .sidebar-toggle:hover {
+  color: #f6f6f6;
+  background: rgba(0, 0, 0, 0.1);
+}
+.skin-black .main-header .navbar .sidebar-toggle {
+  color: #fff;
+}
+.skin-black .sidebar-menu > li > a {
+  color:#FFFFFF !important;
+  border-left: 0 solid transparent;
+  margin: 2px;
+}
+.skin-black .sidebar-menu > li.active > a {
+  margin:2px;
+  border-radius: 4px ;
+  color: #ffffff;
+  background: #1e282c;
+}
+.skin-black .sidebar-menu > li:hover > a{
+  margin:2px;
+  border-radius: 4px ;
+  color: #ffffff;
+  border: 1px dashed    #222222;
+  background: rgba(0, 0, 0, 0.45);
+}

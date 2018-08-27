@@ -1,0 +1,45 @@
+.skin-blue-gray-light .navbar {
+    background-color: #607D8B; }
+
+.skin-blue-gray-light .navbar-brand {
+    color: #fff; }
+.skin-blue-gray-light .navbar-brand:hover {
+    color: #fff; }
+.skin-blue-gray-light .navbar-brand:active {
+    color: #fff; }
+.skin-blue-gray-light .navbar-brand:focus {
+    color: #fff; }
+
+.skin-blue-gray-light .nav > li > a {
+    color: #fff; }
+.skin-blue-gray-light .nav > li > a:hover {
+    background-color: transparent; }
+.skin-blue-gray-light .nav > li > a:focus {
+    background-color: transparent; }
+
+.skin-blue-gray-light .nav .open > a {
+    background-color: transparent; }
+.skin-blue-gray-light .nav .open > a:hover {
+    background-color: transparent; }
+.skin-blue-gray-light .nav .open > a:focus {
+    background-color: transparent; }
+
+.skin-blue-gray-light .bars {
+    color: #fff; }
+
+.skin-blue-gray-light .sidebar .menu .list li.active {
+    background-color: transparent; }
+.skin-blue-gray-light .sidebar .menu .list li.active > :first-child i, .skin-blue-gray-light .sidebar .menu .list li.active > :first-child span {
+    color: #607D8B; }
+
+.skin-blue-gray-light .sidebar .menu .list .toggled {
+    background-color: transparent; }
+
+.skin-blue-gray-light .sidebar .menu .list .ml-menu {
+    background-color: transparent; }
+
+.skin-blue-gray-light .sidebar .legal {
+    background-color: #fff; }
+.skin-blue-gray-light .sidebar .legal .copyright a {
+    color: #607D8B !important; }
+
