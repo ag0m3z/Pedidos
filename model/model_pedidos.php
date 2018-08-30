@@ -304,7 +304,11 @@ class model_pedidos
         $where = '';
 
         if($FechaAtual){
-            $where = " WHERE date(a.FechaAlta) = date(now()) ";
+            if(date("H:i:s") >= "00:00:00"){
+
+                $FechaAnterior= date("Y-m-d 23:59:00",strtotime(date("Y-m-d")."- 1 days"));
+                $where = " WHERE date(a.FechaAlta) = date('$FechaAnterior') ";
+            }
         }
 
         $this->db->_query = "

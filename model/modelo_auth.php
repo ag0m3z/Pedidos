@@ -31,7 +31,8 @@ class modelo_auth
                 a.idestatus,b.Descripcion as NombreEstatus,
                 a.idperfil, c.Descripcion as NombrePerfil,
                 d.tema,d.imgMenu,
-                d.NombreEmpresa,d.Colonia,d.Calle,d.Telefono1,d.Telefono2,d.Celular,d.Logo
+                d.NombreEmpresa,d.Colonia,d.Calle,d.Telefono1,d.Telefono2,d.Celular,d.Logo,
+                d.HoraCierreSistema
             FROM 
             usuarios as a 
             LEFT JOIN catalogos as b ON a.idestatus = b.opc_catalogo AND b.idcatalogo = 1

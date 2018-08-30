@@ -20,7 +20,7 @@ use core\core,
 $width_in_mm = 65;
 
 $totalRegistros = 0;
-$font = 8;
+$font = 11;
 $Folio = core::getFormatFolio($_REQUEST['qp'],10);
 
 $connect = new seguridad();
@@ -31,18 +31,18 @@ $totalRegistros = count($model->rows);
 $data = $model->rows;
 
 if($data[0]['adomicilio'] == 1) {
-    $height_in_mm = 84;
+    $height_in_mm = 94;
 }else{
     $height_in_mm = 75;
 }
 for($i=0;$i< $totalRegistros;$i++){
     if($totalRegistros != $i){
-        $height_in_mm += 3;
+        $height_in_mm += 4;
     }
 }
 ob_start();
 ?>
-<page backtop="30mm" backbottom="1mm" >
+<page backtop="40mm"  backbottom="15mm" >
     <page_header >
         <table style="width: 100%">
             <tr>
@@ -120,7 +120,7 @@ ob_start();
         if($data[0]['adomicilio'] == 1){
             echo '<p style="text-align: left;font-size: 9px" >
                     Cliente: '.$data[0]['NombreCliente'].'<br>Telefono: '.$data[0]['telefono'].'<br>Dirección: '.$data[0]['direccion'].'
-                  </p>';
+                  Aladlldasladsl aksdladsllakladsldsldskldks <br>kadskjdskadskladsjkldsjlkadsklasdjkjalsdkjlkajds</p>';
         }
         ?>
         <p style="text-align: center;font-size: 9px;margin-bottom: 5px;" >

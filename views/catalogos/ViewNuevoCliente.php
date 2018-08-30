@@ -35,7 +35,6 @@ core::setTitle();
                 Nuevo Cliente
             </div>
             <div class="modal-body">
-                <?=var_dump($_POST)?>
                 <ul class="nav nav-tabs" role="tablist">
                     <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-list-alt"></i> General</a></li>
                     <li role="presentation"><a href="#detalle" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-list-ol"></i> Detalle</a></li>

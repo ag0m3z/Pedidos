@@ -1800,8 +1800,9 @@ function setCrearTicket(idpedido){
     }else if(isNaN(idpedido)){
         MyAlert("Ingrese el numero de Folio");
     }else{
-        var win = window.open("views/caja/ViewTicket.php?pc=2&qp="+idpedido+"","","location=no,width=100,height=500,scrollbars=NO,menubar=NO,titlebar=NO,toolbar=NO");
-        setTimeout(function () { win.close();}, 3500);
+        var win = window.open("views/caja/ViewTicket.php?pc=2&qp="+idpedido+"","","location=no,width=10,height=30,scrollbars=NO,menubar=NO,titlebar=NO,toolbar=NO");
+        var win2 = window.open("views/caja/ViewTicket.php?pc=2&qp="+idpedido+"","","location=no,width=10,height=10,scrollbars=NO,menubar=NO,titlebar=NO,toolbar=NO");
+        setTimeout(function () { win.close();win2.close();}, 3000);
     }
 }
 
@@ -1883,6 +1884,7 @@ function setImgOnload(e) {
 function setSaveConfiguracion() {
 
     var AppKey = localStorage.getItem('key');
+    var horaSystem = $("#horacierresystem").val();
 
     var nombre = $("#nombre_empresa").val(),
         colonia = $("#colonia").val(),
@@ -1932,7 +1934,8 @@ function setSaveConfiguracion() {
             tel_ticket:tel_ticket,
             group_ticket:group_ticket,
             automatico_ticket:automatico_ticket,
-            close_ticket:close_ticket
+            close_ticket:close_ticket,
+            horasistema:horaSystem
         },
         beforeSend:function () {
             fnloadSpinner(1);

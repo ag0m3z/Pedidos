@@ -5,6 +5,14 @@
  * Date: 14/06/2018
  * Time: 01:35 PM
  */
+
+include "../../core/core.php";
+include "../../core/session.php";
+include "../../core/seguridad.php";
+
+use core\core,core\session;
+
+//var_dump($_SESSION);
 ?>
 <script>
     setDashboardHome();

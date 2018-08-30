@@ -35,7 +35,13 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
                 if($FechaComp == $connect->_rows[0]['Fecha']){
                     core::JsonResult('consulta exitosa',true,array('FechaActual'=>$FechaActual,'FechaUltimoCierre'=>$connect->_rows[0]['Fecha'],'MontoCierre'=>$connect->_rows[0]['Monto']));
                 }else{
-                    core::JsonResult('consulta exitosa',true,array('response'=>'cierre','FechaActual'=>$FechaActual,'FechaUltimoCierre'=>$connect->_rows[0]['Fecha'],'MontoCierre'=>$connect->_rows[0]['Monto']));
+                    if(date("H:i:s") >= $_SESSION['DataConfig']['HoraCierreSistema']){
+                        core::JsonResult('consulta exitosa',true,array('response'=>'cierre','FechaActual'=>$FechaActual,'FechaUltimoCierre'=>$connect->_rows[0]['Fecha'],'MontoCierre'=>$connect->_rows[0]['Monto']));
+                    }else{
+                        //No realizar cierre
+                        core::JsonResult('consulta exitosa',true,array('FechaActual'=>$FechaActual,'FechaUltimoCierre'=>$connect->_rows[0]['Fecha'],'MontoCierre'=>$connect->_rows[0]['Monto']));
+                    }
+
                 }
             }else{
                 core::JsonResult('Cierre aun no realizado',true,array('response'=>'cierre','FechaActual'=>$FechaActual,'FechaUltimoCierre'=>$connect->_rows[0]['Fecha'],'MontoCierre'=>$connect->_rows[0]['Monto']));

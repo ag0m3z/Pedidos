@@ -33,8 +33,13 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     $NoUsuarioAlta = $_SESSION['DataLogin']['idusuario'];
 
     $FechaRegistroPedido = date("Y-m-d H:i:s");
-    if(date("H:i") > "24:50"){
-        $FechaRegistroPedido = date("");
+
+    if(date("H:i:s") >= "00:00:00"){
+
+        $FechaAnterior= date("Y-m-d 23:59:00",strtotime(date("Y-m-d")."- 1 days"));
+
+
+        $FechaRegistroPedido = $FechaAnterior;
     }
 
     switch ($_POST['route']){
@@ -139,7 +144,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
                     core::JsonResult("El importe de pago debe ser mayor al total");
                 }else{
 
-                    $_POST['FechaVenta'] = date("Y-m-d H:i:s");
+                    $_POST['FechaVenta'] =$FechaRegistroPedido;
 
                     $_POST['importe_venta'] = $ImporteTotal;
                     $_POST['importe_pagado'] = $ImportePagado;

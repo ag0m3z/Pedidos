@@ -66,6 +66,16 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
                     'Celular'=>$login->rows[0]['Celular']
                 ));
 
+                $sesion->set('DataConfig',array(
+                    'HoraCierreSistema'=>$login->rows[0]['HoraCierreSistema'],
+                    'Logo'=>$login->rows[0]['Logo'],
+                    'Colonia'=>$login->rows[0]['Colonia'],
+                    'Calle'=>$login->rows[0]['Calle'],
+                    'Telefono1'=>$login->rows[0]['Telefono1'],
+                    'Telefono2'=>$login->rows[0]['Telefono2'],
+                    'Celular'=>$login->rows[0]['Celular']
+                ));
+
                 $login->getAccesos($login->rows[0]['idusuario']);
                 $sesion->set('Menu',$login->rows);
 

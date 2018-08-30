@@ -66,6 +66,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         }
 
 
+        $HoraCierreSistema = $_POST['horasistema'];
 
         $connect->_query = "
         UPDATE config 
@@ -80,7 +81,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
                 TicketTelefono = '$tel_ticket',
                 TicketAgrupacion = '$group_ticket',
                 TicketAutomatico = '$automatico_ticket',
-                CerrarPantallaTicket = '$close_ticket'
+                CerrarPantallaTicket = '$close_ticket',
+                HoraCierreSistema = '$HoraCierreSistema'
         WHERE idKey = 1    
         ";
 

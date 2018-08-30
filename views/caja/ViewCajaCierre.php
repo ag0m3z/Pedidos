@@ -43,7 +43,6 @@ if($_POST['fechacierre'] == null){
                 </div>
             </div>
             <div class="col-md-8">
-                <?=var_dump($_POST)?>
             </div>
         </div>
     </div>

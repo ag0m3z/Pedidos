@@ -25,15 +25,19 @@ $connect->_query = "
           if(TicketAutomatico=1,'checked','')as TicketAutomatico,
           if(TicketAgrupacion=1,'checked','')as TicketAgrupacion,
           if(CerrarPantallaTicket = 1, 'checked','')as CerrarPantallaTicket,
-          Licencia,FechaExp
+          Licencia,FechaExp,
+          HoraCierreSistema
     FROM config WHERE idKey=1
 ";
 
 $connect->get_result_query(true);
 $data = $connect->_rows[0];
-
+$HoraCierre = substr($data['HoraCierreSistema'],0,5);
 ?>
 <script>
+
+    $('#horacierresystem option[value="<?=$HoraCierre?>"]').attr("selected",true);
+
     $("img[name='<?=$data['imgMenu']?>']").addClass("bg-green imgactive");
     $('#logo_empresa').change(function(e) {
         setAddImage(e);
@@ -72,6 +76,7 @@ $data = $connect->_rows[0];
                                </div>
 
                            </div>
+
                            <div class="col-md-6">
                                <div class="form-group">
                                    <label>Telefono 1 </label>
@@ -86,6 +91,25 @@ $data = $connect->_rows[0];
                                    <input class="form-control" value="<?=$data['Celular']?>" title="Celular de la Empresa" placeholder="Celular" type="text" id="celular">
                                </div>
                            </div>
+
+                           <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Hora de Cierre</label>
+                                    <select id="horacierresystem" title="Hora de Cierre de Caja" class="form-control">
+                                        <option value="00:00">12:00 PM</option>
+                                        <option value="00:30">12:30 PM</option>
+                                        <option value="01:00">1:00 AM</option>
+                                        <option value="01:30">1:30 AM</option>
+                                        <option value="02:00">2:00 AM</option>
+                                        <option value="02:30">2:30 AM</option>
+                                        <option value="03:00">3:00 AM</option>
+                                        <option value="03:30">3:30 AM</option>
+                                        <option value="04:00">4:00 AM</option>
+                                        <option value="04:30">4:30 AM</option>
+                                    </select>
+                                </div>
+                           </div>
+
                        </div>
 
                        <div class="row row-sm">
